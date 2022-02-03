@@ -1,10 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
+  --font-base: 'Merriweather', serif;
+  --font-alt: 'Open Sans', sans-serif;
+
   --color-golden: #dcca87;
   --color-black: #0c0c0c;
   --color-darkgray: #545454;
   --color-crimson: #f5efdb;
   --color-gray: #aaaaaa;
   --color-white: #ffffff;
+}
+
+html,
+body {
+  font-family: var(--font-base);
 }
 
 * {
