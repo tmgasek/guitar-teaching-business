@@ -1,65 +1,55 @@
 export const guitarLessons = [
   {
-    title: 'In person lesson',
+    name: 'Curabitur finibus ipsum',
     length: '30 minutes',
     price: `£29`,
   },
   {
-    title: 'In person lesson2',
+    name: 'Fusce ut interdum',
     length: '1 hour',
     price: '£59',
   },
   {
-    title: 'In person lesson3',
+    name: 'Proin ac libero',
     length: '30 minutes',
     price: `£29`,
   },
   {
-    title: 'In person lesson4',
+    name: 'Consequat diam at',
     length: '1 hour',
     price: '£59',
   },
   {
-    title: 'In person lesson5',
+    name: 'Posuere mattis',
     length: '30 minutes',
     price: `£29`,
-  },
-  {
-    title: 'In person lesson6',
-    length: '1 hour',
-    price: '£59',
   },
 ];
 
 export const theoryLessons = [
   {
-    title: 'theory lesson ',
+    name: 'In hac habitasse platea dictums',
     length: '30 minutes',
     price: `£29`,
   },
   {
-    title: 'theory lesson 2',
+    name: 'Etiam posuere mi semper',
     length: '1 hour',
     price: '£59',
   },
   {
-    title: 'theory lesson 3',
+    name: 'Fusce dignissim',
     length: '30 minutes',
     price: `£29`,
   },
   {
-    title: 'theory lesson 4',
+    name: 'Integer posuere sem purus',
     length: '1 hour',
     price: '£59',
   },
   {
-    title: 'theory lesson 5',
+    name: 'In hac habitasse platea',
     length: '30 minutes',
     price: `£29`,
-  },
-  {
-    title: 'theory lesson 6',
-    length: '1 hour',
-    price: '£59',
   },
 ];

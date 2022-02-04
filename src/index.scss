@@ -56,3 +56,23 @@ a {
     transform: translateY(0);
   }
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-washedpink);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-green);
+}

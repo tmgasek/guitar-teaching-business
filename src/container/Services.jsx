@@ -1,25 +1,26 @@
+import styles from '../styles/Services.module.scss';
 import { SubHeading } from '../components';
 import { guitarLessons, theoryLessons } from '../constants/data';
 import ServiceItem from '../components/ServiceItem';
 
 const Services = () => {
   return (
-    <div>
-      <div>
-        <div>
-          <div>
+    <div className={styles.servicesWrapper}>
+      <div className="sectionWrapper">
+        <div className={styles.container}>
+          <div className={styles.headingWrapper}>
             <SubHeading title={'Our Services'} />
-            <div>Here's what we offer</div>
+            <div className="heading">Here's what we offer</div>
           </div>
 
-          <div>
-            <div>
-              <div>Instrument Lessons</div>
-              <div>
+          <div className={styles.services}>
+            <div className={styles.serviceSection}>
+              <div className={styles.serviceHeading}>Practical</div>
+              <div className={styles.serviceItemsWrapper}>
                 {guitarLessons.map((lesson) => (
-                  <div
-                    key={lesson.title}
-                    title={lesson.title}
+                  <ServiceItem
+                    key={lesson.name}
+                    name={lesson.name}
                     price={lesson.price}
                     length={lesson.length}
                   />
@@ -27,17 +28,17 @@ const Services = () => {
               </div>
             </div>
 
-            <div>
-              <img src="/assets/strat.png" alt="guitar-divider" />
+            <div className={styles.dividerGuitar}>
+              <img src="/assets/guitar-06.png" alt="guitar-divider" />
             </div>
 
-            <div>
-              <div>Theory Lessons</div>
-              <div>
+            <div className={styles.serviceSection}>
+              <div className={styles.serviceHeading}>Theory</div>
+              <div className={styles.serviceItemsWrapper}>
                 {theoryLessons.map((lesson) => (
                   <ServiceItem
-                    key={lesson.title}
-                    title={lesson.title}
+                    key={lesson.name}
+                    name={lesson.name}
                     price={lesson.price}
                     length={lesson.length}
                   />
