@@ -1,127 +1,36 @@
-/** @jsxImportSource @emotion/react */
-import styled from '@emotion/styled';
 import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdMusicNote } from 'react-icons/md';
-
-const NavItem = styled.a`
-  color: white;
-  margin: 0 1rem;
-  cursor: pointer;
-  &:hover {
-    color: var(--color-gray);
-  }
-`;
-
-const Nav = styled.nav`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--color-black);
-  padding: 1rem 2rem;
-`;
-
-const NavSectionMain = styled.ul`
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  @media screen and (max-width: 1150px) {
-    display: none;
-  }
-`;
-
-const NavSectionLogin = styled.div`
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  a {
-    color: var(--color-white);
-    margin: 0 1rem;
-    text-decoration: none;
-    transition: 0.5s ease;
-    &:hover {
-      border-bottom: 1px solid var(--color-green);
-    }
-  }
-  div {
-    width: 1px;
-    height: 30px;
-    background-color: var(--color-green);
-  }
-  @media screen and (max-width: 650px) {
-    display: none;
-  }
-`;
-
-const NavMobile = styled.div`
-  display: none;
-  @media screen and (max-width: 1150px) {
-    display: flex;
-  }
-`;
-
-const NavMobileOverlay = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color-black);
-  transition: 0.5s ease;
-  z-index: 5;
-  svg {
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-`;
-
-const NavSectionMobileMain = styled.ul`
-  list-style: none;
-  li {
-    margin: 2rem;
-    font-size: 2rem;
-    text-align: center;
-  }
-`;
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <Nav>
+    <nav>
       <h1 style={{ color: 'var(--color-white)' }}>LOGO</h1>
-      <NavSectionMain>
+      <div>
         <li>
-          <NavItem href="#home">Home</NavItem>
+          <div href="#home">Home</div>
         </li>
         <li>
-          <NavItem href="#about">About</NavItem>
+          <div href="#about">About</div>
         </li>
         <li>
-          <NavItem href="#services">Services</NavItem>
+          <div href="#services">Services</div>
         </li>
         <li>
-          <NavItem href="#awards">Awards</NavItem>
+          <div href="#awards">Awards</div>
         </li>
         <li>
-          <NavItem href="#contact">Contact</NavItem>
+          <div href="#contact">Contact</div>
         </li>
-      </NavSectionMain>
-      <NavSectionLogin>
+      </div>
+      <div>
         <a href="#login">Login / Register</a>
         <div />
         <a href="#login">Book Lessons</a>
-      </NavSectionLogin>
-      <NavMobile>
+      </div>
+      <div>
         <GiHamburgerMenu
           style={{ cursor: 'pointer' }}
           color="#fff"
@@ -132,7 +41,7 @@ const Navbar = () => {
         />
 
         {toggleMenu && (
-          <NavMobileOverlay className="slide-bottom">
+          <div className="slide-bottom">
             <MdMusicNote
               color="#fff"
               fontSize={27}
@@ -140,27 +49,27 @@ const Navbar = () => {
                 setToggleMenu(false);
               }}
             />
-            <NavSectionMobileMain>
+            <div>
               <li>
-                <NavItem href="#home">Home</NavItem>
+                <div href="#home">Home</div>
               </li>
               <li>
-                <NavItem href="#about">About</NavItem>
+                <div href="#about">About</div>
               </li>
               <li>
-                <NavItem href="#services">Services</NavItem>
+                <div href="#services">Services</div>
               </li>
               <li>
-                <NavItem href="#awards">Awards</NavItem>
+                <div href="#awards">Awards</div>
               </li>
               <li>
-                <NavItem href="#contact">Contact</NavItem>
+                <div href="#contact">Contact</div>
               </li>
-            </NavSectionMobileMain>
-          </NavMobileOverlay>
+            </div>
+          </div>
         )}
-      </NavMobile>
-    </Nav>
+      </div>
+    </nav>
   );
 };
 export default Navbar;
