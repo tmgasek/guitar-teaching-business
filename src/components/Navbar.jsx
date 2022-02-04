@@ -38,18 +38,18 @@ const NavSectionLogin = styled.div`
   justify-content: flex-end;
   align-items: center;
   a {
-    color: white;
+    color: var(--color-white);
     margin: 0 1rem;
     text-decoration: none;
     transition: 0.5s ease;
     &:hover {
-      border-bottom: 1px solid var(--color-golden);
+      border-bottom: 1px solid var(--color-green);
     }
   }
   div {
     width: 1px;
     height: 30px;
-    background-color: var(--color-golden);
+    background-color: var(--color-green);
   }
   @media screen and (max-width: 650px) {
     display: none;
@@ -73,7 +73,7 @@ const NavMobileOverlay = styled.div`
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: var(--color-black);
   transition: 0.5s ease;
   z-index: 5;
   svg {
@@ -98,7 +98,7 @@ const Navbar = () => {
 
   return (
     <Nav>
-      <h1 style={{ color: 'white' }}>LOGO</h1>
+      <h1 style={{ color: 'var(--color-white)' }}>LOGO</h1>
       <NavSectionMain>
         <li>
           <NavItem href="#home">Home</NavItem>

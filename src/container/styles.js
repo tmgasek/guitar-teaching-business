@@ -43,3 +43,34 @@ export const ImgWrapper = styled.div`
     }
   }
 `;
+
+export const H1 = styled.h1`
+  color: var(--color-washedpink);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  @media screen and (min-width: 2000px) {
+    font-size: 8rem;
+  }
+  @media screen and (max-width: 1150px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+`;
+
+export const P = styled.p`
+  color: var(--color-white);
+  font-family: var(--font-alt);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  line-height: 24px;
+  font-size: 1.1rem;
+`;

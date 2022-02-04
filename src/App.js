@@ -7,6 +7,7 @@ import {
   Header,
   Intro,
   Laurels,
+  Services,
 } from './container';
 import { Navbar } from './components';
 import './App.css';
@@ -17,6 +18,7 @@ const App = () => (
 
     <Header />
     <AboutUs />
+    <Services />
     <Intro />
     <Laurels />
     <Gallery />

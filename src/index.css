@@ -4,12 +4,13 @@
   --font-base: 'Merriweather', serif;
   --font-alt: 'Open Sans', sans-serif;
 
-  --color-golden: #dcca87;
-  --color-black: #0c0c0c;
-  --color-darkgray: #545454;
-  --color-crimson: #f5efdb;
-  --color-gray: #aaaaaa;
-  --color-white: #ffffff;
+  --color-black: #19181a;
+  --color-green: #479761;
+  --color-yellow: #cebc81;
+  --color-gray: #545454;
+  --color-pink: #a16e83;
+  --color-washedpink: #b19f9e;
+  --color-white: #e6e6e6;
 }
 
 html,
